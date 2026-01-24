@@ -81,7 +81,7 @@ const blogPosts = [
     description: "Hosting a static website on S3 using CloudFormation.",
     date: "May 2025",
     readTime: "4 min read",
-    views: 137,
+    views: 124,
     tags: ["AWS", "S3", "CloudFormation"],
     url: "https://medium.com/@elnala24/project-s3-static-website-with-cloudformation-2253652b7405",
   },

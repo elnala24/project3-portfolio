@@ -123,7 +123,7 @@ const popularPosts = [
   {
     title: "Project: Creating 3 Architectures with Excalidraw",
     description: "Designing cloud architectures using Excalidraw diagrams.",
-    date: "November 2024",
+    date: "March 2025",
     readTime: "5 min read",
     views: 490,
     tags: ["Architecture", "Design"],
@@ -132,9 +132,9 @@ const popularPosts = [
   {
     title: "Project: S3 Static Website with CloudFormation",
     description: "Hosting a static website on S3 using CloudFormation.",
-    date: "December 2024",
+    date: "May 2025",
     readTime: "4 min read",
-    views: 124,
+    views: 137,
     tags: ["AWS", "S3", "CloudFormation"],
     url: "https://medium.com/@elnala24/project-s3-static-website-with-cloudformation-2253652b7405",
   }
