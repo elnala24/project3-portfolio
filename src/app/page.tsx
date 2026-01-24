@@ -121,21 +121,23 @@ const projects = [
 // Blog posts data
 const recentPosts = [
   {
-    title: "How I Built IAM Security with Three IaC Tools",
-    description: "A deep dive into implementing role-based access control using CloudFormation, Terraform, and AWS CDK.",
-    date: "January 2025",
-    readTime: "8 min read",
-    views: 150,
-    tags: ["AWS", "IAM", "Infrastructure as Code"],
+    title: "Project: Creating 3 Architectures with Excalidraw",
+    description: "Designing cloud architectures using Excalidraw diagrams.",
+    date: "November 2024",
+    readTime: "5 min read",
+    views: 316,
+    tags: ["Architecture", "Design"],
+    url: "https://medium.com/@elnala24/project-creating-3-architectures-with-excalidraw-1a360a1ec5da",
   },
   {
-    title: "Migrating to Infrastructure as Code with CDK",
-    description: "How I converted manual AWS infrastructure into reproducible, version-controlled CDK TypeScript code.",
-    date: "January 2025",
-    readTime: "6 min read",
-    views: 120,
-    tags: ["CDK", "TypeScript", "VPC"],
-  },
+    title: "Project: S3 Static Website with CloudFormation",
+    description: "Hosting a static website on S3 using CloudFormation.",
+    date: "December 2024",
+    readTime: "4 min read",
+    views: 137,
+    tags: ["AWS", "S3", "CloudFormation"],
+    url: "https://medium.com/@elnala24/project-s3-static-website-with-cloudformation-2253652b7405",
+  }
 ]
 
 function ProjectCarousel({ images, title }: { images: string[]; title: string }) {
