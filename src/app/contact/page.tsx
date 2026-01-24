@@ -66,31 +66,6 @@ export default function ContactPage() {
           </CardContent>
         </Card>
         
-        <div className="flex justify-center gap-6">
-            <a
-            href="https://linkedin.com/in/alantommyle"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Linkedin className="w-6 h-6" />
-          </a>
-          <a
-            href="https://github.com/elnala24"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Github className="w-6 h-6" />
-          </a>
-          <a
-            href="mailto:elnala24@gmail.com"
-            className="text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Mail className="w-6 h-6" />
-          </a>
-        </div>
-        
         <Footer />
       </main>
     </div>
