@@ -3,7 +3,7 @@
 import { useState, useCallback } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Github, Linkedin, Mail, FileText, Globe, ArrowRight, Calendar, Clock, Eye } from "lucide-react"
+import { Github, Linkedin, Mail, FileText, Globe, ArrowRight, Calendar, Clock, Eye, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -230,7 +230,7 @@ export default function PortfolioPage() {
             </div>
           </div>
           
-          <div className="relative w-48 h-48 md:w-56 md:h-56">
+          <div className="relative w-48 h-48 md:w-56 md:h-56 order-first md:order-last">
   <Carousel className="w-full h-full" opts={{ loop: true }}>
     <CarouselContent className="h-full ml-0">
       {["/profile.png", "/pic2.png", "/pic3.png"].map((src, index) => (
@@ -401,8 +401,10 @@ export default function PortfolioPage() {
                 <article key={index} className="p-5 hover:bg-muted/30 transition-colors cursor-pointer">
                   <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
                     <div className="flex-1">
-                      <h3 className="font-semibold text-foreground mb-2">{post.title}</h3>
-                      <p className="text-sm text-muted-foreground mb-3 leading-relaxed">{post.description}</p>
+                    <div className="flex items-center gap-2 mb-2">
+                      <h3 className="font-semibold text-foreground">{post.title}</h3>
+                      <ExternalLink className="w-4 h-4 text-muted-foreground" />
+                    </div>                      <p className="text-sm text-muted-foreground mb-3 leading-relaxed">{post.description}</p>
                       <div className="flex flex-wrap gap-1.5">
                         {post.tags.slice(0, 3).map((tag, tagIndex) => (
                           <span
