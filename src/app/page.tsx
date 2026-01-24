@@ -205,7 +205,7 @@ export default function PortfolioPage() {
               <span className="text-primary">hey, it's alan! 👋</span>{" "}
             </h1>
             <p className="text-lg text-foreground mb-4">
-              Cloud Engineer based in San Jose, CA 🇺🇸
+              Cloud Engineer based in San Jose, CA
             </p>
             <p className="text-foreground mb-6 leading-relaxed">
               AWS Certified Cloud Practitioner building and automating cloud infrastructure using CloudFormation, Terraform, and AWS CDK (Python / TypeScript)
