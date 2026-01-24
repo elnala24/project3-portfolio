@@ -273,14 +273,6 @@ export default function PortfolioPage() {
                                   </li>
                                 ))}
                               </ul>
-                              {role.link && (
-                                <Button variant="outline" size="sm" className="mt-3 gap-2 text-xs bg-transparent" asChild>
-                                  <a href={role.link.url}>
-                                    <Globe className="w-3 h-3" />
-                                    {role.link.label}
-                                  </a>
-                                </Button>
-                              )}
                             </div>
                           ))}
                         </div>
