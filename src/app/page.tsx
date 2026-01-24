@@ -119,7 +119,7 @@ const projects = [
 ]
 
 // Blog posts data
-const recentPosts = [
+const popularPosts = [
   {
     title: "Project: Creating 3 Architectures with Excalidraw",
     description: "Designing cloud architectures using Excalidraw diagrams.",
@@ -388,7 +388,14 @@ export default function PortfolioPage() {
           
           <Card className="border-border bg-card/50">
             <CardContent className="p-0 divide-y divide-border">
-              {recentPosts.map((post, index) => (
+              {popularPosts.map((post, index) => (
+              <a
+                key={index}
+                href={post.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
                 <article key={index} className="p-5 hover:bg-muted/30 transition-colors cursor-pointer">
                   <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
                     <div className="flex-1">
@@ -426,6 +433,7 @@ export default function PortfolioPage() {
                     </div>
                   </div>
                 </article>
+              </a>
               ))}
             </CardContent>
           </Card>

@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="border-t border-border mt-12 pt-8 pb-12">
       <div className="flex items-center justify-between">
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} elnala24.com
+          © {new Date().getFullYear()} elnala.com
         </p>
         <div className="flex items-center gap-4">
           <a
