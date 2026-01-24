@@ -21,9 +21,9 @@ const workExperience = [
         title: "Financial Analyst",
         period: "Dec 2022 - Sep 2024",
         points: [
-          "Prepared monthly reports for 12 programs extracted from Sage Intacct, Nexonia, and SharePoint",
-          "Assisted development and review of program and contract budgets, reporting financial data such as profit and loss statements",
-          "Managed contract renewal dates and provided financial compliance with government agencies",
+          "Submitted monthly reports for 12 programs extracted from Sage Intacct, Nexonia, and SharePoint: Prebill (Employee Time with Hourly Cost), Expenses, Accruals, A/R Aging, Travel, Reclassification, Admin Allocation, and Program Mapping",
+          "Assisted development and review of program and contract budgets, reporting financial data such as profit and loss statements, trended analysis and notifying program managers about any significant changes",
+          "Recognized unforeseen audits and providing a solution within a tight deadline to the counties of Santa Cruz, Santa Clara, San Mateo, Alameda, and Solano",
         ],
       },
     ],
@@ -37,7 +37,8 @@ const workExperience = [
         period: "Jul 2019 - Jul 2020",
         points: [
           "Generated over $3.6M in total automotive sales with over 180 successfully closed deals",
-          "Outperformed monthly goals of 12 units with customer service survey score above 95%",
+          "Outperformed monthly goals of 12 units with customer satisfaction survey score above 95%",
+          "Structured over 50 purchase agreements per month using ADP desk tools",
         ],
       },
     ],
@@ -56,7 +57,7 @@ const education = [
         points: [
           "Building production-ready AWS infrastructure using CDK, CloudFormation, and Terraform",
           "Hands-on projects: IAM security, VPC architecture, serverless applications, CI/CD pipelines",
-          "AWS Certified Cloud Practitioner (May 2025)",
+          "AWS Certified Cloud Practitioner (May 2025-2028)",
         ],
       },
     ],
@@ -69,8 +70,9 @@ const education = [
         title: "B.S. in Finance",
         period: "Aug 2018 - Dec 2021",
         points: [
-          "Foundation in financial analysis and business operations",
-          "Skills in data analysis, reporting, and stakeholder communication",
+          "Foundation in financial analysis, forecasting, and business operations",
+          "Developed enterprise-level cost management & resource allocation expertise",
+          "Gained deep knowledge of risk assessment, compliance (Basel concepts), and audit trails"
         ],
       },
     ],
