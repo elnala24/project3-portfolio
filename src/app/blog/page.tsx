@@ -7,7 +7,7 @@ const blogPosts = [
   {
     title: "Project: YouTube Title Generator with AI & TypeScript",
     description: "Building a web app that generates AI-powered title variations using YouTube Data API and Groq AI.",
-    date: "January 2025",
+    date: "January 2026",
     readTime: "5 min read",
     views: 6,
     tags: ["TypeScript", "AI", "YouTube API"],
@@ -16,7 +16,7 @@ const blogPosts = [
   {
     title: "Project: Deploying Portfolio Site with AWS Amplify and CDK",
     description: "Configuring automated CI/CD deployments from GitHub using AWS CDK and Secrets Manager.",
-    date: "January 2025",
+    date: "January 2026",
     readTime: "6 min read",
     views: 14,
     tags: ["AWS", "Amplify", "CDK"],
@@ -25,7 +25,7 @@ const blogPosts = [
   {
     title: "Project: From Console Chaos to Code",
     description: "Migrating manual AWS infrastructure to Infrastructure as Code with CDK TypeScript.",
-    date: "January 2025",
+    date: "January 2026",
     readTime: "8 min read",
     views: 8,
     tags: ["AWS", "CDK", "TypeScript"],
@@ -34,7 +34,7 @@ const blogPosts = [
   {
     title: "Project: IAM Security Using IaC (CloudFormation)",
     description: "Implementing role-based access control with MFA enforcement using CloudFormation.",
-    date: "December 2024",
+    date: "January 2026",
     readTime: "7 min read",
     views: 13,
     tags: ["AWS", "IAM", "CloudFormation"],
@@ -43,7 +43,7 @@ const blogPosts = [
   {
     title: "Project: Building a VPC with Terraform",
     description: "Creating a multi-tier VPC architecture using Terraform.",
-    date: "December 2024",
+    date: "January 2026",
     readTime: "6 min read",
     views: 21,
     tags: ["Terraform", "VPC", "AWS"],
@@ -52,7 +52,7 @@ const blogPosts = [
   {
     title: "Terraform",
     description: "Terraform concepts and best practices.",
-    date: "December 2024",
+    date: "January 2026",
     readTime: "5 min read",
     views: 32,
     tags: ["Terraform", "IaC"],
@@ -61,7 +61,7 @@ const blogPosts = [
   {
     title: "Intro to IaC: Terraform",
     description: "Getting started with Infrastructure as Code using Terraform.",
-    date: "December 2024",
+    date: "January 2026",
     readTime: "6 min read",
     views: 15,
     tags: ["Terraform", "IaC"],
@@ -70,7 +70,7 @@ const blogPosts = [
   {
     title: "Project: RDS with CloudFormation",
     description: "Deploying Amazon RDS databases using CloudFormation templates.",
-    date: "December 2024",
+    date: "May 2025",
     readTime: "5 min read",
     views: 65,
     tags: ["AWS", "RDS", "CloudFormation"],
@@ -79,7 +79,7 @@ const blogPosts = [
   {
     title: "Project: S3 Static Website with CloudFormation",
     description: "Hosting a static website on S3 using CloudFormation.",
-    date: "December 2024",
+    date: "May 2025",
     readTime: "4 min read",
     views: 137,
     tags: ["AWS", "S3", "CloudFormation"],
@@ -88,7 +88,7 @@ const blogPosts = [
   {
     title: "Project: Auto Scaling with CloudFormation",
     description: "Implementing auto scaling groups and policies with CloudFormation.",
-    date: "December 2024",
+    date: "May 2025",
     readTime: "6 min read",
     views: 82,
     tags: ["AWS", "Auto Scaling", "CloudFormation"],
@@ -97,7 +97,7 @@ const blogPosts = [
   {
     title: "Project: Application Load Balancer with CloudFormation",
     description: "Deploying an ALB with listener rules and target groups.",
-    date: "December 2024",
+    date: "May 2025",
     readTime: "5 min read",
     views: 42,
     tags: ["AWS", "ALB", "CloudFormation"],
@@ -106,7 +106,7 @@ const blogPosts = [
   {
     title: "Project: IAM Groups, Policies & Roles with CloudFormation",
     description: "Managing IAM resources using CloudFormation templates.",
-    date: "December 2024",
+    date: "May 2025",
     readTime: "6 min read",
     views: 84,
     tags: ["AWS", "IAM", "CloudFormation"],
@@ -115,7 +115,7 @@ const blogPosts = [
   {
     title: "Project: Bastion with CloudFormation",
     description: "Setting up a bastion host for secure SSH access.",
-    date: "December 2024",
+    date: "May 2025",
     readTime: "5 min read",
     views: 64,
     tags: ["AWS", "Bastion", "CloudFormation"],
@@ -124,7 +124,7 @@ const blogPosts = [
   {
     title: "Project: AWS Fundamentals with CloudFormation",
     description: "Learning AWS basics through hands-on CloudFormation projects.",
-    date: "November 2024",
+    date: "May 2025",
     readTime: "7 min read",
     views: 41,
     tags: ["AWS", "CloudFormation"],
@@ -133,7 +133,7 @@ const blogPosts = [
   {
     title: "Week 5 Part 4: AWS CloudFormation",
     description: "Introduction to Infrastructure as Code with CloudFormation.",
-    date: "November 2024",
+    date: "May 2025",
     readTime: "6 min read",
     views: 40,
     tags: ["AWS", "CloudFormation", "IaC"],
@@ -142,7 +142,7 @@ const blogPosts = [
   {
     title: "Week 5 Part 3: EC2 Instances",
     description: "Deep dive into Amazon EC2 instances and configurations.",
-    date: "November 2024",
+    date: "May 2025",
     readTime: "5 min read",
     views: 40,
     tags: ["AWS", "EC2"],
@@ -151,7 +151,7 @@ const blogPosts = [
   {
     title: "Week 5 Part 2: Bastion Host",
     description: "Understanding bastion hosts for secure cloud access.",
-    date: "November 2024",
+    date: "May 2025",
     readTime: "4 min read",
     views: 54,
     tags: ["AWS", "Security", "Bastion"],
@@ -160,7 +160,7 @@ const blogPosts = [
   {
     title: "Project: Design a VPC Architecture",
     description: "Creating VPC architecture diagrams with proper subnet design.",
-    date: "November 2024",
+    date: "May 2025",
     readTime: "5 min read",
     views: 41,
     tags: ["AWS", "VPC", "Architecture"],
@@ -169,7 +169,7 @@ const blogPosts = [
   {
     title: "Week 5 Part 1: AWS Fundamentals",
     description: "Getting started with core AWS services and concepts.",
-    date: "November 2024",
+    date: "May 2025",
     readTime: "6 min read",
     views: 37,
     tags: ["AWS", "Cloud"],
@@ -178,7 +178,7 @@ const blogPosts = [
   {
     title: "Week 4: Linux and Bash",
     description: "Learning Linux system administration and Bash scripting.",
-    date: "November 2024",
+    date: "May 2025",
     readTime: "5 min read",
     views: 59,
     tags: ["Linux", "Bash"],
@@ -187,7 +187,7 @@ const blogPosts = [
   {
     title: "Project: Video Sharing Platform",
     description: "Designing a serverless video sharing platform architecture.",
-    date: "November 2024",
+    date: "March 2025",
     readTime: "6 min read",
     views: 52,
     tags: ["AWS", "Serverless", "Architecture"],
@@ -196,7 +196,7 @@ const blogPosts = [
   {
     title: "Project: Creating 3 Architectures with Excalidraw",
     description: "Designing cloud architectures using Excalidraw diagrams.",
-    date: "November 2024",
+    date: "March 2025",
     readTime: "5 min read",
     views: 490,
     tags: ["Architecture", "Design"],
@@ -205,7 +205,7 @@ const blogPosts = [
   {
     title: "Week 3: System Design Applications",
     description: "Understanding system design principles and patterns.",
-    date: "November 2024",
+    date: "March 2025",
     readTime: "6 min read",
     views: 86,
     tags: ["System Design"],
@@ -214,7 +214,7 @@ const blogPosts = [
   {
     title: "Week 2: Git & Cloud Architecture",
     description: "Version control with Git and cloud architecture fundamentals.",
-    date: "November 2024",
+    date: "December 2024",
     readTime: "5 min read",
     views: 15,
     tags: ["Git", "Cloud"],
