@@ -202,7 +202,7 @@ export default function PortfolioPage() {
         <section className="flex flex-col md:flex-row items-start justify-between gap-8 mb-16">
           <div className="flex-1">
             <h1 className="text-4xl md:text-5xl font-bold mb-3">
-              <span className="text-primary">hi there. 👋</span>{" "}
+              <span className="text-primary">hey, it's alan! 👋</span>{" "}
             </h1>
             <p className="text-lg text-foreground mb-4">
               Cloud Engineer based in San Jose, CA 🇺🇸
