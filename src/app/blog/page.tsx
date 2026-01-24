@@ -198,7 +198,7 @@ const blogPosts = [
     description: "Designing cloud architectures using Excalidraw diagrams.",
     date: "November 2024",
     readTime: "5 min read",
-    views: 316,
+    views: 490,
     tags: ["Architecture", "Design"],
     url: "https://medium.com/@elnala24/project-creating-3-architectures-with-excalidraw-1a360a1ec5da",
   },
@@ -221,7 +221,7 @@ const blogPosts = [
     url: "https://medium.com/@elnala24/week-2-git-cloud-architecture-f0ff50ff685b",
   },
   {
-    title: "Cloud Engineer Academy Week 1: Moving to Korea & Learning the Fundamentals",
+    title: "Cloud Engineer Academy Week 1: Learning the Fundamentals",
     description: "Starting my cloud engineering journey and relocating to Korea.",
     date: "November 2024",
     readTime: "7 min read",

@@ -125,7 +125,7 @@ const recentPosts = [
     description: "Designing cloud architectures using Excalidraw diagrams.",
     date: "November 2024",
     readTime: "5 min read",
-    views: 316,
+    views: 490,
     tags: ["Architecture", "Design"],
     url: "https://medium.com/@elnala24/project-creating-3-architectures-with-excalidraw-1a360a1ec5da",
   },
@@ -134,7 +134,7 @@ const recentPosts = [
     description: "Hosting a static website on S3 using CloudFormation.",
     date: "December 2024",
     readTime: "4 min read",
-    views: 137,
+    views: 124,
     tags: ["AWS", "S3", "CloudFormation"],
     url: "https://medium.com/@elnala24/project-s3-static-website-with-cloudformation-2253652b7405",
   }
@@ -377,10 +377,10 @@ export default function PortfolioPage() {
           </div>
         </section>
 
-        {/* Recent Posts */}
+        {/* Popular Posts */}
         <section id="posts" className="mb-20">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-semibold text-primary">recent posts</h2>
+            <h2 className="text-2xl font-semibold text-primary">popular posts</h2>
             <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-1 transition-colors">
               view more <ArrowRight className="w-4 h-4" />
             </Link>
