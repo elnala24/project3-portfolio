@@ -204,7 +204,7 @@ export default function PortfolioPage() {
               Cloud Engineer based in San Jose, CA 🇺🇸
             </p>
             <p className="text-foreground mb-6 leading-relaxed">
-              AWS Certified Cloud Practitioner building and automating cloud infrastructure with using CloudFormation, Terraform, and AWS CDK (Python / TypeScript)
+              AWS Certified Cloud Practitioner building and automating cloud infrastructure using CloudFormation, Terraform, and AWS CDK (Python / TypeScript)
             </p>
             
             <div className="flex items-center gap-4 mt-8">
