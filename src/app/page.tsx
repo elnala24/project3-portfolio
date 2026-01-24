@@ -198,13 +198,13 @@ export default function PortfolioPage() {
         <section className="flex flex-col md:flex-row items-start justify-between gap-8 mb-16">
           <div className="flex-1">
             <h1 className="text-4xl md:text-5xl font-bold mb-3">
-              <span className="text-primary">hi there.</span>{" "}
+              <span className="text-primary">hi there. 👋</span>{" "}
             </h1>
-            <p className="text-lg text-muted-foreground mb-4">
-              Cloud Engineer based in San Jose, CA
+            <p className="text-lg text-foreground mb-4">
+              Cloud Engineer based in San Jose, CA 🇺🇸
             </p>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
-              AWS Certified Cloud Practitioner building and automating cloud infrastructure with CDK, Terraform, and CloudFormation.
+            <p className="text-foreground mb-6 leading-relaxed">
+              AWS Certified Cloud Practitioner building and automating cloud infrastructure with using CloudFormation, Terraform, and AWS CDK (Python / TypeScript)
             </p>
             
             <div className="flex items-center gap-4 mt-8">
@@ -226,16 +226,24 @@ export default function PortfolioPage() {
             </div>
           </div>
           
-          <div className="relative">
-            <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden rotate-3 ring-2 ring-border">
-              <Image
-                src="/profile.png"
-                alt="Alan Le"
-                fill
-                className="object-cover"
-              />
-            </div>
+          <div className="relative w-48 h-48 md:w-56 md:h-56">
+  <Carousel className="w-full h-full" opts={{ loop: true }}>
+    <CarouselContent className="h-full ml-0">
+      {["/profile.png", "/pic2.png", "/pic3.png"].map((src, index) => (
+        <CarouselItem key={index} className="pl-0 h-full">
+          <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden rotate-3 ring-2 ring-border relative">
+            <Image
+              src={src}
+              alt={`Alan Le ${index + 1}`}
+              fill
+              className="object-cover"
+            />
           </div>
+        </CarouselItem>
+      ))}
+    </CarouselContent>
+  </Carousel>
+</div>
         </section>
 
         {/* Experience Tabs */}
@@ -268,7 +276,7 @@ export default function PortfolioPage() {
                               <ul className="mt-3 space-y-1.5">
                                 {role.points.map((point, pointIndex) => (
                                   <li key={pointIndex} className="text-sm text-muted-foreground flex items-start gap-2">
-                                    <span className="text-primary mt-1.5 shrink-0">•</span>
+                                    <span className="text-primary shrink-0">•</span>
                                     <span>{point}</span>
                                   </li>
                                 ))}
@@ -305,7 +313,7 @@ export default function PortfolioPage() {
                               <ul className="mt-3 space-y-1.5">
                                 {role.points.map((point, pointIndex) => (
                                   <li key={pointIndex} className="text-sm text-muted-foreground flex items-start gap-2">
-                                    <span className="text-primary mt-1.5 shrink-0">•</span>
+                                    <span className="text-primary shrink-0">•</span>
                                     <span>{point}</span>
                                   </li>
                                 ))}
@@ -325,7 +333,7 @@ export default function PortfolioPage() {
         {/* Featured Projects */}
         <section id="projects" className="mb-20">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-semibold text-foreground">featured projects</h2>
+            <h2 className="text-2xl font-semibold text-primary">featured projects</h2>
             <Link href="/projects" className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-1 transition-colors">
               view more <ArrowRight className="w-4 h-4" />
             </Link>
@@ -370,7 +378,7 @@ export default function PortfolioPage() {
         {/* Recent Posts */}
         <section id="posts" className="mb-20">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-semibold text-foreground">recent posts</h2>
+            <h2 className="text-2xl font-semibold text-primary">recent posts</h2>
             <Link href="/blog" className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-1 transition-colors">
               view more <ArrowRight className="w-4 h-4" />
             </Link>
