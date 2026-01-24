@@ -1,4 +1,4 @@
-import { Calendar, Clock, ExternalLink } from "lucide-react"
+import { Calendar, Clock, ExternalLink, Eye, View } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -279,6 +279,11 @@ export default function BlogPage() {
                         <Clock className="w-3 h-3" />
                         {post.readTime}
                       </span>
+                      <span className="flex items-center gap-1">
+                        <Eye className="w-3 h-3" />
+                        {post.views}
+                      </span>
+
                     </div>
                   </div>
                 </article>
