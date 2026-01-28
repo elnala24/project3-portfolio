@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useCallback } from "react"
+import { useState, useCallback, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { Github, Linkedin, Mail, FileText, Globe, ArrowRight, Calendar, Clock, Eye, ExternalLink } from "lucide-react"
@@ -102,7 +102,7 @@ const projects = [
   {
     title: "Portfolio Site with CI/CD",
     description: "Built and deployed a Next.js portfolio on AWS Amplify with CI/CD—configured automated deployments from GitHub using AWS CDK and stored credentials securely in AWS Secrets Manager.",
-    images: ["/projects/amplify-1.png"],
+    images: ["/projects/amplify-1.png", "/projects/portfolio-architecture.png"],
     tags: ["Amplify", "CDK", "Next.js", "Secrets Manager"],
     links: [
       { label: "Website", url: "https://main.dw4k8zj5zj0c5.amplifyapp.com", icon: "globe" },
@@ -151,10 +151,10 @@ function ProjectCarousel({ images, title }: { images: string[]; title: string })
     setCurrent(api.selectedScrollSnap())
   }, [api])
 
-  useState(() => {
-    if (!api) return
-    api.on("select", onSelect)
-  })
+useEffect(() => {
+  if (!api) return
+  api.on("select", onSelect)
+}, [api, onSelect])
 
   return (
     <div className="relative">
@@ -167,7 +167,7 @@ function ProjectCarousel({ images, title }: { images: string[]; title: string })
                   src={image || "/placeholder.svg"}
                   alt={`${title} screenshot ${index + 1}`}
                   fill
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
             </CarouselItem>
@@ -188,6 +188,55 @@ function ProjectCarousel({ images, title }: { images: string[]; title: string })
           ))}
         </div>
       )}
+    </div>
+  )
+}
+
+function ProfileCarousel() {
+  const [api, setApi] = useState<CarouselApi>()
+  const [current, setCurrent] = useState(0)
+  const images = ["/profile.png", "/pic2.png", "/pic3.png"]
+
+  const onSelect = useCallback(() => {
+    if (!api) return
+    setCurrent(api.selectedScrollSnap())
+  }, [api])
+
+  useEffect(() => {
+    if (!api) return
+    api.on("select", onSelect)
+  }, [api, onSelect])
+
+  return (
+    <div className="relative">
+      <Carousel setApi={setApi} className="w-full h-full" opts={{ loop: true }}>
+        <CarouselContent className="h-full ml-0">
+          {images.map((src, index) => (
+            <CarouselItem key={index} className="pl-0 h-full">
+              <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden rotate-3 ring-2 ring-border relative">
+                <Image
+                  src={src}
+                  alt={`Alan Le ${index + 1}`}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
+      <div className="flex justify-center gap-1.5 mt-3">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => api?.scrollTo(index)}
+            className={`w-1.5 h-1.5 rounded-full transition-colors ${
+              current === index ? "bg-foreground" : "bg-muted-foreground/40"
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
     </div>
   )
 }
@@ -230,23 +279,8 @@ export default function PortfolioPage() {
             </div>
           </div>
           
-          <div className="relative w-48 h-48 md:w-56 md:h-56 order-first md:order-last">
-  <Carousel className="w-full h-full" opts={{ loop: true }}>
-    <CarouselContent className="h-full ml-0">
-      {["/profile.png", "/pic2.png", "/pic3.png"].map((src, index) => (
-        <CarouselItem key={index} className="pl-0 h-full">
-          <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden rotate-3 ring-2 ring-border relative">
-            <Image
-              src={src}
-              alt={`Alan Le ${index + 1}`}
-              fill
-              className="object-cover"
-            />
-          </div>
-        </CarouselItem>
-      ))}
-    </CarouselContent>
-  </Carousel>
+<div className="relative w-48 h-48 md:w-56 md:h-56 order-first md:order-last">
+  <ProfileCarousel />
 </div>
         </section>
 

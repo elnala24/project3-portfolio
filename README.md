@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alan Le - Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js and deployed on AWS Amplify with automated CI/CD.
 
-First, run the development server:
+🌐 **Live Site:** [elnala.com](https://elnala.com)
 
+## Architecture
+
+![Architecture Diagram](architecture/architecture.png)
+
+### Tech Stack
+- **Frontend:** Next.js, React, TypeScript, Tailwind CSS, shadcn/ui
+- **Hosting:** AWS Amplify with CloudFront CDN
+- **CI/CD:** Automated deployments via GitHub webhooks
+- **Infrastructure:** AWS CDK (TypeScript)
+- **DNS:** Route 53 (custom domain)
+- **Secrets:** AWS Secrets Manager (GitHub token)
+
+### How It Works
+
+**Infrastructure Deployment (one-time):**
+1. Developer runs `cdk deploy` from local machine
+2. CloudFormation creates all AWS resources (Amplify, Route 53, Secrets Manager, CloudFront)
+
+**Runtime Flow:**
+1. Developer pushes code to GitHub
+2. GitHub webhook triggers Amplify build
+3. Amplify pulls code (authenticates via Secrets Manager)
+4. Amplify builds and deploys to CloudFront
+5. Users access site through CloudFront CDN at elnala.com
+
+## Features
+
+- Dark theme responsive design
+- Automated deployments on every push to main branch
+- Infrastructure as Code using AWS CDK
+- Secure credential management with AWS Secrets Manager
+- Global content delivery via CloudFront
+- Custom domain with SSL certificate
+
+## Local Development
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
+```
+project3-portfolio/
+├── portfolio/                    # Next.js frontend
+│   ├── src/app/                  # Source code
+│   ├── public/                   # Static assets
+│   └── architecture/             # Architecture diagrams
+└── portfolio-infrastructure/     # CDK infrastructure code
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Author
 
-## Learn More
+**Alan Le** - Cloud Engineer
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 🌐 Website: [elnala.com](https://elnala.com)
+- 💼 LinkedIn: [linkedin.com/in/alantommyle](https://linkedin.com/in/alantommyle)
+- 🐙 GitHub: [github.com/elnala24](https://github.com/elnala24)
+- ✍️ Medium: [medium.com/@elnala24](https://medium.com/@elnala24)
