@@ -60,7 +60,7 @@ project3-portfolio/
 
 **Alan Le** - Cloud Engineer
 
-- 🌐  Website: [elnala.com](https://elnala.com)
-- 💼  LinkedIn: [linkedin.com/in/alantommyle](https://linkedin.com/in/alantommyle)
-- 🐙  GitHub: [github.com/elnala24](https://github.com/elnala24)
-- ✍️  Medium: [medium.com/@elnala24](https://medium.com/@elnala24)
+- 🌐 Website:  [elnala.com](https://elnala.com)
+- 💼 LinkedIn: [linkedin.com/in/alantommyle](https://linkedin.com/in/alantommyle)
+- 🐙 GitHub:   [github.com/elnala24](https://github.com/elnala24)
+- ✍️ Medium:   [medium.com/@elnala24](https://medium.com/@elnala24)
