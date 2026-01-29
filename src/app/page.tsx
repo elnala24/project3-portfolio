@@ -112,7 +112,7 @@ const projects = [
   {
     title: "YouTube AI Title Generator",
     description: "Web app using TypeScript, YouTube Data API, and Groq AI—fetches video metadata and generates 4 AI-powered title variations with different tones.",
-    images: ["/projects/ytapp.png"],
+    images: ["/projects/ytapp.png", "/projects/ytapp2.png"],
     tags: ["TypeScript", "YouTube API", "Groq AI", "REST APIs"],
     links: [
       { label: "Source", url: "https://github.com/elnala24/ytapp-project", icon: "github" },
