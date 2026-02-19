@@ -82,6 +82,16 @@ const education = [
 // Projects data
 const projects = [
   {
+  title: "Serverless Contact Form (Terraform)",
+  description: "Built a serverless contact form for a travel agency using Terraform. API Gateway receives submissions, Lambda stores inquiries in DynamoDB, and SES sends confirmation emails — 19 AWS resources deployed via IaC.",
+  images: ["/projects/travelease1.png", "/projects/travelease2.png"],
+  tags: ["Terraform", "Lambda", "API Gateway", "DynamoDB", "SES"],
+  links: [
+    { label: "Article", url: "https://medium.com/@elnala24/project-contact-form-site-w-aws-lambda-and-more-3c7759f9c423", icon: "globe" },
+    { label: "Source", url: "https://github.com/elnala24/project4-travelease-contact-form", icon: "github" },
+  ],
+  },
+  {
     title: "IAM Security Implementation",
     description: "Comprehensive IAM security solution using CloudFormation, Terraform, and AWS CDK (Python)—established role-based access control for 4 teams with MFA enforcement and least-privilege policies.",
     images: ["/projects/finish-design.png"],

@@ -11,21 +11,23 @@ import { Footer } from "@/components/footer"
 
 const projects = [
   {
-    title: "IAM Security Implementation",
-    description: "Comprehensive IAM security solution using CloudFormation, Terraform, and AWS CDK (Python)—established role-based access control for 4 teams with MFA enforcement and least-privilege policies.",
-    images: ["/projects/finish-design.png"],
-    tags: ["IAM", "CloudFormation", "Terraform", "CDK", "Python"],
-    links: [
-      { label: "Source", url: "https://github.com/elnala24/aws-iam-security-project", icon: "github" },
-    ],
+  title: "Serverless Contact Form (Terraform)",
+  description: "Built a serverless contact form for a travel agency using Terraform. API Gateway receives submissions, Lambda stores inquiries in DynamoDB, and SES sends confirmation emails — 19 AWS resources deployed via IaC.",
+  images: ["/projects/travelease1.png", "/projects/travelease2.png"],
+  tags: ["Terraform", "Lambda", "API Gateway", "DynamoDB", "SES"],
+  links: [
+    { label: "Source", url: "https://github.com/elnala24/project4-travelease-contact-form", icon: "github" },
+    { label: "Article", url: "https://medium.com/@elnala24/project-contact-form-site-w-aws-lambda-and-more-3c7759f9c423", icon: "globe" },
+  ],
   },
   {
-    title: "Healthcare Infrastructure Migration",
-    description: "Migrated manual AWS infrastructure to IaC using AWS CDK with TypeScript—designed secure multi-tier VPC with public/private subnet isolation across 2 AZs, deployed EC2 and Multi-AZ RDS.",
-    images: ["/projects/techhealth-architecture.png"],
-    tags: ["CDK", "TypeScript", "VPC", "EC2", "RDS"],
+    title: "YouTube AI Title Generator",
+    description: "Web app using TypeScript, YouTube Data API, and Groq AI—fetches video metadata and generates 4 AI-powered title variations with different tones.",
+    images: ["/projects/ytapp.png","/projects/ytapp2.png"],
+    tags: ["TypeScript", "YouTube API", "Groq AI", "REST APIs"],
     links: [
-      { label: "Source", url: "https://github.com/elnala24/project2-techhealth-cdk", icon: "github" },
+      { label: "Source", url: "https://github.com/elnala24/ytapp-project", icon: "github" },
+      { label: "Article", url: "https://medium.com/@elnala24/project-youtube-title-generator-with-ai-ts-4e5837df6423", icon: "globe" },
     ],
   },
   {
@@ -36,17 +38,29 @@ const projects = [
     links: [
       { label: "Website", url: "https://main.de5mugr6dhi8o.amplifyapp.com", icon: "globe" },
       { label: "Source", url: "https://github.com/elnala24/project3-portfolio", icon: "github" },
+      { label: "Article", url: "https://medium.com/@elnala24/project-deploying-portfolio-site-with-aws-amplify-and-cdk-5c56d9efbc6e", icon: "globe" },
     ],
   },
   {
-    title: "YouTube AI Title Generator",
-    description: "Web app using TypeScript, YouTube Data API, and Groq AI—fetches video metadata and generates 4 AI-powered title variations with different tones.",
-    images: ["/projects/ytapp.png","/projects/ytapp2.png"],
-    tags: ["TypeScript", "YouTube API", "Groq AI", "REST APIs"],
+    title: "Healthcare Infrastructure Migration",
+    description: "Migrated manual AWS infrastructure to IaC using AWS CDK with TypeScript—designed secure multi-tier VPC with public/private subnet isolation across 2 AZs, deployed EC2 and Multi-AZ RDS.",
+    images: ["/projects/techhealth-architecture.png"],
+    tags: ["CDK", "TypeScript", "VPC", "EC2", "RDS"],
     links: [
-      { label: "Source", url: "https://github.com/elnala24/ytapp-project", icon: "github" },
+      { label: "Source", url: "https://github.com/elnala24/project2-techhealth-cdk", icon: "github" },
+      { label: "Article", url: "https://medium.com/@elnala24/project-from-console-chaos-to-code-153b91223fdf", icon: "globe" }
     ],
   },
+  {
+    title: "IAM Security Implementation",
+    description: "Comprehensive IAM security solution using CloudFormation, Terraform, and AWS CDK (Python)—established role-based access control for 4 teams with MFA enforcement and least-privilege policies.",
+    images: ["/projects/finish-design.png"],
+    tags: ["IAM", "CloudFormation", "Terraform", "CDK", "Python"],
+    links: [
+      { label: "Source", url: "https://github.com/elnala24/aws-iam-security-project", icon: "github" },
+      { label: "Article", url: "https://medium.com/@elnala24/project-iam-security-using-iac-cloudformation-546ee94485e0", icon: "globe" }
+    ],
+  }
 ]
 
 function ProjectCarousel({ images, title }: { images: string[]; title: string }) {
