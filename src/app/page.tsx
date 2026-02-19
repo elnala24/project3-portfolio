@@ -87,17 +87,29 @@ const projects = [
   images: ["/projects/travelease1.png", "/projects/travelease2.png"],
   tags: ["Terraform", "Lambda", "API Gateway", "DynamoDB", "SES"],
   links: [
-    { label: "Article", url: "https://medium.com/@elnala24/project-contact-form-site-w-aws-lambda-and-more-3c7759f9c423", icon: "globe" },
     { label: "Source", url: "https://github.com/elnala24/project4-travelease-contact-form", icon: "github" },
+    { label: "Article", url: "https://medium.com/@elnala24/project-contact-form-site-w-aws-lambda-and-more-3c7759f9c423", icon: "globe" },
   ],
   },
   {
-    title: "IAM Security Implementation",
-    description: "Comprehensive IAM security solution using CloudFormation, Terraform, and AWS CDK (Python)—established role-based access control for 4 teams with MFA enforcement and least-privilege policies.",
-    images: ["/projects/finish-design.png"],
-    tags: ["IAM", "CloudFormation", "Terraform", "CDK", "Python"],
+    title: "YouTube AI Title Generator",
+    description: "Web app using TypeScript, YouTube Data API, and Groq AI—fetches video metadata and generates 4 AI-powered title variations with different tones.",
+    images: ["/projects/ytapp.png", "/projects/ytapp2.png"],
+    tags: ["TypeScript", "YouTube API", "Groq AI", "REST APIs"],
     links: [
-      { label: "Source", url: "https://github.com/elnala24/aws-iam-security-project", icon: "github" },
+      { label: "Source", url: "https://github.com/elnala24/ytapp-project", icon: "github" },
+      { label: "Article", url: "https://medium.com/@elnala24/project-youtube-title-generator-with-ai-ts-4e5837df6423", icon: "globe" },
+    ],
+  },
+  {
+    title: "Portfolio Site with CI/CD",
+    description: "Built and deployed a Next.js portfolio on AWS Amplify with CI/CD—configured automated deployments from GitHub using AWS CDK and stored credentials securely in AWS Secrets Manager.",
+    images: ["/projects/amplify-1.png", "/projects/portfolio-architecture.png"],
+    tags: ["Amplify", "CDK", "Next.js", "Secrets Manager"],
+    links: [
+      { label: "Source", url: "https://github.com/elnala24/portfolio-site", icon: "github" },
+      { label: "Article", url: "https://medium.com/@elnala24/project-deploying-portfolio-site-with-aws-amplify-and-cdk-5c56d9efbc6e", icon: "globe" },
+      { label: "Website", url: "https://main.dw4k8zj5zj0c5.amplifyapp.com", icon: "globe" },
     ],
   },
   {
@@ -107,27 +119,19 @@ const projects = [
     tags: ["CDK", "TypeScript", "VPC", "EC2", "RDS"],
     links: [
       { label: "Source", url: "https://github.com/elnala24/project2-techhealth-cdk", icon: "github" },
+      { label: "Article", url: "https://medium.com/@elnala24/project-from-console-chaos-to-code-153b91223fdf", icon: "globe" },
     ],
   },
   {
-    title: "Portfolio Site with CI/CD",
-    description: "Built and deployed a Next.js portfolio on AWS Amplify with CI/CD—configured automated deployments from GitHub using AWS CDK and stored credentials securely in AWS Secrets Manager.",
-    images: ["/projects/amplify-1.png", "/projects/portfolio-architecture.png"],
-    tags: ["Amplify", "CDK", "Next.js", "Secrets Manager"],
+    title: "IAM Security Implementation",
+    description: "Comprehensive IAM security solution using CloudFormation, Terraform, and AWS CDK (Python)—established role-based access control for 4 teams with MFA enforcement and least-privilege policies.",
+    images: ["/projects/finish-design.png"],
+    tags: ["IAM", "CloudFormation", "Terraform", "CDK", "Python"],
     links: [
-      { label: "Website", url: "https://main.dw4k8zj5zj0c5.amplifyapp.com", icon: "globe" },
-      { label: "Source", url: "https://github.com/elnala24/portfolio-site", icon: "github" },
+      { label: "Source", url: "https://github.com/elnala24/aws-iam-security-project", icon: "github" },
+      { label: "Article", url: "https://medium.com/@elnala24/project-iam-security-using-iac-cloudformation-546ee94485e0", icon: "globe" },
     ],
-  },
-  {
-    title: "YouTube AI Title Generator",
-    description: "Web app using TypeScript, YouTube Data API, and Groq AI—fetches video metadata and generates 4 AI-powered title variations with different tones.",
-    images: ["/projects/ytapp.png", "/projects/ytapp2.png"],
-    tags: ["TypeScript", "YouTube API", "Groq AI", "REST APIs"],
-    links: [
-      { label: "Source", url: "https://github.com/elnala24/ytapp-project", icon: "github" },
-    ],
-  },
+  }
 ]
 
 // Blog posts data

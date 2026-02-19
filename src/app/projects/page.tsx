@@ -36,9 +36,10 @@ const projects = [
     images: ["/projects/amplify-1.png", "/projects/portfolio-architecture.png"],
     tags: ["Amplify", "CDK", "Next.js", "Secrets Manager"],
     links: [
-      { label: "Website", url: "https://main.de5mugr6dhi8o.amplifyapp.com", icon: "globe" },
       { label: "Source", url: "https://github.com/elnala24/project3-portfolio", icon: "github" },
       { label: "Article", url: "https://medium.com/@elnala24/project-deploying-portfolio-site-with-aws-amplify-and-cdk-5c56d9efbc6e", icon: "globe" },
+      { label: "Website", url: "https://main.de5mugr6dhi8o.amplifyapp.com", icon: "globe" },
+
     ],
   },
   {
