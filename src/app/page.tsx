@@ -276,7 +276,7 @@ export default function PortfolioPage() {
             
             <div className="flex items-center gap-4 mt-8">
               <Button variant="outline" size="sm" className="gap-2 bg-transparent" asChild>
-                <a href="/Alan_Le_2026_CV.docx.pdf" target="_blank" rel="noopener noreferrer">
+                <a href="/Alan-Le-CV.docx.pdf" target="_blank" rel="noopener noreferrer">
                   <FileText className="w-4 h-4" />
                   Resume
                 </a>
