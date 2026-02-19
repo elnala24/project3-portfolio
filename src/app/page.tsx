@@ -137,7 +137,7 @@ const popularPosts = [
     description: "Designing cloud architectures using Excalidraw diagrams.",
     date: "March 2025",
     readTime: "5 min read",
-    views: 490,
+    views: 551,
     tags: ["Architecture", "Design"],
     url: "https://medium.com/@elnala24/project-creating-3-architectures-with-excalidraw-1a360a1ec5da",
   },
@@ -146,7 +146,7 @@ const popularPosts = [
     description: "Hosting a static website on S3 using CloudFormation.",
     date: "May 2025",
     readTime: "4 min read",
-    views: 124,
+    views: 152,
     tags: ["AWS", "S3", "CloudFormation"],
     url: "https://medium.com/@elnala24/project-s3-static-website-with-cloudformation-2253652b7405",
   }

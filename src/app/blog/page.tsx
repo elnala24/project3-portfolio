@@ -5,6 +5,15 @@ import { Footer } from "@/components/footer"
 
 const blogPosts = [
   {
+  title: "Project: Contact Form Site w/ AWS Lambda and more!",
+  description: "Building a serverless contact form with Terraform, Lambda, API Gateway, DynamoDB, and SES.",
+  date: "February 2026",
+  readTime: "24 min read",
+  views: 4,
+  tags: ["AWS", "Terraform", "Serverless", "Lambda"],
+  url: "https://medium.com/@elnala24/project-contact-form-site-w-aws-lambda-and-more-3c7759f9c423",
+  },
+  {
     title: "Project: YouTube Title Generator with AI & TypeScript",
     description: "Building a web app that generates AI-powered title variations using YouTube Data API and Groq AI.",
     date: "January 2026",
@@ -81,7 +90,7 @@ const blogPosts = [
     description: "Hosting a static website on S3 using CloudFormation.",
     date: "May 2025",
     readTime: "4 min read",
-    views: 124,
+    views: 152,
     tags: ["AWS", "S3", "CloudFormation"],
     url: "https://medium.com/@elnala24/project-s3-static-website-with-cloudformation-2253652b7405",
   },
@@ -198,7 +207,7 @@ const blogPosts = [
     description: "Designing cloud architectures using Excalidraw diagrams.",
     date: "March 2025",
     readTime: "5 min read",
-    views: 490,
+    views: 551,
     tags: ["Architecture", "Design"],
     url: "https://medium.com/@elnala24/project-creating-3-architectures-with-excalidraw-1a360a1ec5da",
   },
